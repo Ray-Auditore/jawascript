@@ -1,4 +1,4 @@
-var nilai = 40  ;
+var nilai = 90 ;
 var kehadiran = 10;
 var totalPertemuan = 15;
 var lulus = (kehadiran / totalPertemuan) * 100;

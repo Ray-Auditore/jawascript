@@ -1,6 +1,6 @@
 // nomer 1
 
-let hari = "selasa";
+let hari = "minggu";
 
 switch (hari) {
   case "senin":

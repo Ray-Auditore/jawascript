@@ -7,7 +7,7 @@ console.log(rayyan[0]);
 console.log(rayyan[1]);
 console.log(rayyan[2]);
 // no 2
-rayyan[0] = "ananta";
+rayyan[1] = "ananta";
 console.log(rayyan);
 
 // no 3
