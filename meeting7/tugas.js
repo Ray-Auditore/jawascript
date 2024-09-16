@@ -7,12 +7,12 @@ const person = {
     country: "indonesia",
   },
 };
-console.log(person.country);
+console.log(person.address.city);
 person.age = person.age + 5;
 console.log(person.age);
 
-// delete person.city
-// console.log(person.city);
+delete person.city
+console.log(person.city);
 // batas
 
 // no 2
