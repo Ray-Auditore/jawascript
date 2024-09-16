@@ -1,6 +1,6 @@
 // nomer 1
 
-let hari = "minggu";
+let hari = "Sabtu";
 
 switch (hari) {
   case "senin":
@@ -20,19 +20,19 @@ switch (hari) {
     break;
   case "sabtu":
     console.log("Weekend");
-    break;
+   break;
   case "minggu":
     console.log("Weekend");
     break;
 }
 //nomer 2 
-for (let i = 1; i <= 15; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
+for (let i = 12; i <= 80; i++) {
+    if (i % 5 === 0 && i % 7 === 0) {
+      console.log("FizzBuzz",i);
     } else if (i % 3 === 0) {
-      console.log("Fizz");
+      console.log("Fizz",i);
     } else if (i % 5 === 0) {
-      console.log("Buzz");
+      console.log("Buzz"+i);
     } else {
       console.log(i);
     }
@@ -49,7 +49,7 @@ for (let i = 1; i <= 15; i++) {
 //   nomer 4
 for (let i = 1; i <= 15; i++) {
     if (i % 3 === 0) {
-      console.log("multipleofthree");
+      console.log("multipleofthree",i);
     } else {
       console.log(i);
     }
