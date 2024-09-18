@@ -1,5 +1,5 @@
 function checkStock(item, requestQuantity) {
-<<<<<<< HEAD
+
     let Stock = 50;
     if (requestQuantity > Stock) {
       return `Stock Inssuficient for item ${item}!`;
@@ -44,4 +44,3 @@ function restockItem(item, additionalStock) {
 
 console.log(restockItem("milk", 20));
 
->>>>>>> b3d60680055a088ac472b5274e5f42f669fc6358
