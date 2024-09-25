@@ -67,3 +67,4 @@ async function getPostDetails() {
     getPostDetails();
     
 // soal 5
+save
