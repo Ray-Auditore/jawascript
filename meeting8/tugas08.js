@@ -52,6 +52,8 @@ class harimau extends hewan {
 let harimau1 = new harimau("harimau sumatra");
 console.log(harimau1.makan());
 
+
+
 // tugas latihan 8
 class Venicle {
   constructor(nama, brand) {
@@ -76,6 +78,7 @@ class Car extends Venicle {
 }
 let Car1 = new Car("BMW", "Mercedes", 21);
 console.log(Car1.starting());
+
 // tugas no 2
 class Shape {
   constructor(nama) {
