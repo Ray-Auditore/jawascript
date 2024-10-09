@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="konten">Teks awal</div>
+  </body>
+  <script>
+    const divKonten = document.querySelector(".konten");
+
+    divKonten.innerHTML = "<strong>Teks baru</strong>";
+    console.log("innerHTML:", divKonten.innerHTML);
+
+    divKonten.innerText = "Teks yang diubah menggunakan innerText";
+    console.log("innerText:", divKonten.innerText);
+
+    divKonten.textContent = "Teks yang diubah menggunakan textContent";
+    console.log("textContent:", divKonten.textContent);
+  </script>
+</html>
