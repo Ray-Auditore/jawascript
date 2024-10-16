@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="myButton">Klik Saya!</button>
+    <p id="welcomeMessage"></p>
+  </body>
+  <script>
+   window.onload = function () {
+  let proceed = confirm("Apakah Anda ingin melanjutkan?");
+  if (proceed) {
+    alert("Selamat datang di halaman!");
+    promptName();
+  } else {
+    alert("Anda memilih untuk tidak melanjutkan.");
+  }
+};
+
+// Fungsi untuk meminta nama
+function promptName() {
+  let userName = prompt("Silakan masukkan nama Anda:");
+
+  // Jika pengguna tidak memasukkan nama
+  if (!userName) {
+    let tryAgain = confirm("Apakah Anda ingin mencoba lagi?");
+    if (tryAgain) {
+      promptName();  // Coba lagi
+    } else {
+      alert("Terima kasih!");
+    }
+  } else {
+    // Jika pengguna memasukkan nama, tampilkan pesan
+    document.getElementById("welcomeMessage").innerText = "Halo, " + userName + "!";
+  }
+}
+
+// Mengubah teks tombol dan mempertahankan fungsinya
+const myButton = document.getElementById("myButton");
+myButton.innerText = "Tampilkan Pesan";
+
+// Event listener untuk tombol
+myButton.addEventListener("click", function () {
+  promptName(); // Panggil fungsi untuk menampilkan pesan pengantar
+});
+
+  </script>
+</html>
