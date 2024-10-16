@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Butuh Motivasi?</h1>
+    <h3 id="caption">tekan tombol di bawah ini untuk mendapatkan pesan motivasi!</h3>
+    <button class="button" id="tombol">Dapatkan motivasi</button>
+</body>
+<script>
+    const getMotivationEvent = new Event("getMotivation");
+
+    function motivationHandler() {
+        document.getElementById("caption").innerText = "jangan berhenti sampai kau bangga";
+    }   
+
+    window.addEventListener("load", function() {
+        const tombol = document.getElementById("tombol");
+        window.addEventListener("getMotivation", motivationHandler);
+        tombol.addEventListener("click", function() {
+            window.dispatchEvent(getMotivationEvent);
+        });
+    });
+    
+</script>
+</html>

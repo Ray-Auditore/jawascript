@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="triggerButton">klik saya</button>
+</body>
+<script>
+const customClickEvent = new Event("customClickEvent");
+
+function handleCustomClick() {
+    console.log("Custom click event triggered!");
+}
+
+window.addEventListener("customClickEvent", handleCustomClick);
+
+const triggerButton = document.getElementById("triggerButton");
+triggerButton.addEventListener("click", function() {
+    window.dispatchEvent(customClickEvent);
+});
+
+</script>
+</html>
