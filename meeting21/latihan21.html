@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="username" placeholder="Masukan Username" />
+    <button id="saveButton">Simpan Username</button>
+    <button id="loadButton">Ambil Username</button>
+    <p id="output"></p>
+    <button id="removeButton">Hapus Username</button>
+  </body>
+  <script>
+    // menyimpan data ke localStorage
+    document
+      .getElementById("saveButton")
+      .addEventListener("click", function () {
+        const username = document.getElementById("username").value;
+        localStorage.setItem("username", username);
+        alert("Username telah disimpan: " + username);
+      });
+
+    document
+      .getElementById("loadButton")
+      .addEventListener("click", function () {
+        const storedUsername = localStorage.getItem("username");
+        document.getElementById("output").innerText =
+          "Username yang disimpan " +
+          (storedUsername ? storedUsername : "tidak ada");
+      });
+
+    document
+      .getElementById("removeButton")
+      .addEventListener("click", function () {
+        localStorage.removeItem("username");
+        alert("Username telah dihapus");
+      });
+  </script>
+</html>
